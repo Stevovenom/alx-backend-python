@@ -3,19 +3,19 @@
 
 <img src="https://i.redd.it/y9y25tefi5401.png" alt="variable annotations"><br>
 
-# What is type annotation?
+#❓ What is type annotation?
 <p>Its a way to explicitly specify the expected data type of variables, function parameters and return values.</p><br>
 <p>The terms strongly typed vs. weakly typed and statically typed vs. dynamically typed refer to different aspects of how programming languages handle data types. Let’s break down these concepts and provide examples for each:
 
-<strong>1. Strongly Typed vs. Weakly Typed</strong>
+<strong>1. Strongly Typed vs. Weakly Typed</strong><br>
 <strong>Strongly Typed Language: </strong> A language is considered strongly typed when it enforces strict rules about how different data types are used. In a strongly typed language, you cannot perform operations on mismatched types without an explicit conversion. For example, adding a string to an integer without converting one to the other will result in an error.
 
-<strong>Weakly Typed Language: </strong> A weakly typed language is more lenient about mixing types. It may automatically convert between types when necessary, even if they are fundamentally different (implicit type coercion). This can lead to unpredictable behavior, but it gives more flexibility to the programmer.</p><br>
+<strong>Weakly Typed Language: </strong><br> A weakly typed language is more lenient about mixing types. It may automatically convert between types when necessary, even if they are fundamentally different (implicit type coercion). This can lead to unpredictable behavior, but it gives more flexibility to the programmer.</p><br>
 
-<p><strong>2. Statically Typed vs. Dynamically Typed</strong>
+<p><strong>2. Statically Typed vs. Dynamically Typed</strong><br>
 <strong>Statically Typed Language:</strong> In a statically typed language, variable types are known and checked at compile-time. You must declare the type of each variable, and once declared, the type of the variable cannot change. Any type mismatches are caught before the program runs. This usually leads to better performance and fewer runtime errors.
 
-<strong>Statically Typed Language:</strong> In a dynamically typed language, variable types are determined at runtime. You don’t have to declare variable types, and a variable's type can change as the program executes. This makes the language more flexible but can lead to runtime errors.</p>
+<strong>Statically Typed Language:</strong><br> In a dynamically typed language, variable types are determined at runtime. You don’t have to declare variable types, and a variable's type can change as the program executes. This makes the language more flexible but can lead to runtime errors.</p>
  <h1>Type Annotations in Python 3</h1>
     
 <h2> 1. ⚔️How to Use Type Annotations</h2>
