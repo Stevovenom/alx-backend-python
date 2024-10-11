@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+function make_multiplier that takes a float multiplier as an argument
+"""
+
+
 from typing import Callable
 
 
