@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 """
-the use of TypeVar to specify that teh  type of the return  depends on the
-default parameter.
+More involved type annotations
 """
-
-
-from typing import Mapping, Any, TypeVar, Union
-
+from typing import Mapping, Any, Union, TypeVar
 T = TypeVar('T')
 
 
-def safely_get_value(dct: Mapping[Any, Any], key: Any,
+def safely_get_value(dct: Mapping, key: Any,
                      default: Union[T, None] = None) -> Union[Any, T]:
-    """Safely retrieves a value from a dictionary or returns default value."""
+    """
+    safely get value
+    """
     if key in dct:
         return dct[key]
     else:
-        return defiault
+        return default
