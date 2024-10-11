@@ -5,4 +5,10 @@ type-annoted function sum_list which takes input_list of float as argument
 
 
 def sum_list(input_list: float) -> float:
+    """
+    Args:
+        input_list (float): lists of floats as arguments
+    Returns:
+        float: the sum
+    """
     return (sum(input_list))
