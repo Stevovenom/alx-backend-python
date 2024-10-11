@@ -3,7 +3,7 @@
 
 <img src="https://i.redd.it/y9y25tefi5401.png" alt="variable annotations"><br>
 
-#❓ What is type annotation?
+❓# What is type annotation?
 <p>Its a way to explicitly specify the expected data type of variables, function parameters and return values.</p><br>
 <p>The terms strongly typed vs. weakly typed and statically typed vs. dynamically typed refer to different aspects of how programming languages handle data types. Let’s break down these concepts and provide examples for each:
 
