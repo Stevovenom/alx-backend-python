@@ -3,6 +3,8 @@
 type-annoted function sum_list which takes input_list of float as argument
 """
 
+from typing import List
+
 
 def sum_list(input_list: float) -> float:
     """
