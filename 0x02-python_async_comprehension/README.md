@@ -27,7 +27,7 @@ async def main():
     async for value in async_gen():
     print(value)
 
-# run the asynchronous code
+// run the asynchronous code
 asyncio.run(main())
 </code><br>
 
