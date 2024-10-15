@@ -1,30 +1,24 @@
 #!/usr/bin/env python3
 """
-importation of async_comprehension from the previous file and writing a
-measure_routime coroutine
+This module provides an asynchronous function that measures the runtime
+of running 4 instances of the async_comprehension function from the
+'1-async_comprehension' module
 """
-
 import asyncio
-from importlib import import_module as using
 import time
+from importlib import import_module as using
 
 async_comprehension = using('1-async_comprehension').async_comprehension
 
 
 async def measure_runtime() -> float:
     """
-    Measure the runtime of four parallel async comprehensions.
+    Asynchronous function that measures and returns the runtime of
+    running 4 instances of the async_comprehension function.
 
     Returns:
-        float: Total runtime for executing async_comprehension four times.
+        float: The runtime of the async_comprehension function in seconds.
     """
-    start_time = time.perf_counter()
-    await asyncio.gather(
-        async_comprehension(),
-        async_comprehension(),
-        async_comprehension(),
-        async_comprehension(),
-    )
-
-    end_time = time.perf_counter()
-    return end_time - start_time
+    start_time = time.time()
+    await asyncio.gather(*(async_comprehension() for _ in range(4)))
+    return time.time() - start_time
