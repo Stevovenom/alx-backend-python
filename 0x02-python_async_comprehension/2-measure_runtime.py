@@ -4,10 +4,8 @@ importation of async_comprehension from the previous file and writing a
 measure_routime coroutine
 """
 
-import random
 import asyncio
 from importlib import import_module as using
-from typing import List
 import time
 
 async_comprehension = using('1-async_comprehension').async_comprehension
